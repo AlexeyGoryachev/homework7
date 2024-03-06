@@ -66,8 +66,16 @@ public class Main {
         System.out.println(" ");
         System.out.println("task 7.");
         int firstFriday = 1;
-        for (int day = firstFriday; day <= 31; day = day + 7){
+        int day = 1;
+        do {
+            System.out.println(day + " today is friday. need go home erlier.");
+            day = day + 7;
+        }
+        while (day < 31); {
             System.out.println(day + " today is friday. need go home erlier.");
         }
+        System.out.println(" ");
+        System.out.println("task 8.");
+
     }
 }
