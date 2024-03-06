@@ -76,6 +76,14 @@ public class Main {
         }
         System.out.println(" ");
         System.out.println("task 8.");
-
+        int currentYear = 2024;
+        int cometCome = 0;
+        do {
+            System.out.println(cometCome + " comet come.");
+            cometCome = cometCome + 79;
+        }
+        while (cometCome < currentYear + 100);{
+            System.out.println(cometCome + " comet come.");
+        }
     }
 }
