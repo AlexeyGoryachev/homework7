@@ -48,5 +48,20 @@ public class Main {
             if (monthVasi%6 == 0) {
             System.out.println("month " + monthVasi + " amount " + depositVasi);}
         }
+        System.out.println(" ");
+        System.out.println("task 6.");
+        int depositVasi2 = 15000;
+        double percentPerMonth2 = 0.07;
+        int year2 = 9;
+        int totalMonths = year2 * 12;
+        System.out.println(totalMonths);
+        int monthsVasi = 0;
+        while (monthsVasi < 108) {
+            monthsVasi++;
+            depositVasi2 += depositVasi2 * percentPerMonth2;
+            if (monthsVasi % 6 == 0) {
+                System.out.println("month " + monthsVasi + " amount " + depositVasi2);
+            }
+        }
     }
 }
