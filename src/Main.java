@@ -38,14 +38,15 @@ public class Main {
             System.out.println("Year " + year + " population " + population);
         }
         System.out.println(" ");
-        System.out.println("task 4.");
+        System.out.println("task 4/5.");
         int depositVasi = 15000;
         double percentPerMonth = 0.07;
         int monthVasi = 0;
         while (depositVasi < 12_000_000) {
             monthVasi++;
             depositVasi += depositVasi * percentPerMonth;
-            System.out.println("month " + monthVasi + " amount " + depositVasi);
+            if (monthVasi%6 == 0) {
+            System.out.println("month " + monthVasi + " amount " + depositVasi);}
         }
     }
 }
