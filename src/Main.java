@@ -25,5 +25,17 @@ public class Main {
             System.out.print(up + " ");
             up--;
         }
+        System.out.println(" ");
+        System.out.println("task 2.");
+        int year = 0;
+        int population = 12_000_000;
+        int born = 17;
+        int death = 8;
+        int diff = born - death;
+        while (year < 10) {
+            population = population + population / 1000 * diff;
+            year++;
+            System.out.println("Year " + year + " population " + population);
+        }
     }
 }
