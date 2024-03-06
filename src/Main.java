@@ -69,6 +69,5 @@ public class Main {
         for (int day = firstFriday; day <= 31; day = day + 7){
             System.out.println(day + " today is friday. need go home erlier.");
         }
-
     }
 }
