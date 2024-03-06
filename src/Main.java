@@ -63,5 +63,12 @@ public class Main {
                 System.out.println("month " + monthsVasi + " amount " + depositVasi2);
             }
         }
+        System.out.println(" ");
+        System.out.println("task 7.");
+        int firstFriday = 1;
+        for (int day = firstFriday; day <= 31; day = day + 7){
+            System.out.println(day + " today is friday. need go home erlier.");
+        }
+
     }
 }
