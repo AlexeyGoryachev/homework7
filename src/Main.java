@@ -9,7 +9,7 @@ public class Main {
         while (total < 2_495_000) {
             month = month + 1;
             total = total + deposit;
-            total = total + total/100;
+            total = total + total / 100;
             System.out.println("month " + month + " amount accumulated " + total);
         }
         System.out.println(" ");
@@ -26,7 +26,7 @@ public class Main {
             up--;
         }
         System.out.println(" ");
-        System.out.println("task 2.");
+        System.out.println("task 3.");
         int year = 0;
         int population = 12_000_000;
         int born = 17;
@@ -36,6 +36,16 @@ public class Main {
             population = population + population / 1000 * diff;
             year++;
             System.out.println("Year " + year + " population " + population);
+        }
+        System.out.println(" ");
+        System.out.println("task 4.");
+        int depositVasi = 15000;
+        double percentPerMonth = 0.07;
+        int monthVasi = 0;
+        while (depositVasi < 12_000_000) {
+            monthVasi++;
+            depositVasi += depositVasi * percentPerMonth;
+            System.out.println("month " + monthVasi + " amount " + depositVasi);
         }
     }
 }
