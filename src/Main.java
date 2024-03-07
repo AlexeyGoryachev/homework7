@@ -6,7 +6,8 @@ public class Main {
         int deposit = 15000;
         int total = 0;
         int month = 0;
-        while (total < 2_495_000) {
+        int targetAmount = 2_495_000;
+        while (total < targetAmount) {
             month = month + 1;
             total = total + deposit;
             total = total + total / 100;
@@ -40,9 +41,10 @@ public class Main {
         System.out.println(" ");
         System.out.println("task 4/5.");
         int depositVasi = 15000;
+        int targetAmountVasi = 12_000_000;
         double percentPerMonth = 0.07;
         int monthVasi = 0;
-        while (depositVasi < 12_000_000) {
+        while (depositVasi < targetAmountVasi) {
             monthVasi++;
             depositVasi += depositVasi * percentPerMonth;
             if (monthVasi%6 == 0) {
@@ -56,7 +58,7 @@ public class Main {
         int totalMonths = year2 * 12;
         System.out.println(totalMonths);
         int monthsVasi = 0;
-        while (monthsVasi < 108) {
+        while (monthsVasi < totalMonths) {
             monthsVasi++;
             depositVasi2 += depositVasi2 * percentPerMonth2;
             if (monthsVasi % 6 == 0) {
