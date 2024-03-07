@@ -68,13 +68,9 @@ public class Main {
         System.out.println(" ");
         System.out.println("task 7.");
         int firstFriday = 1;
-        int day = 1;
-        do {
-            System.out.println(day + " today is friday. need go home erlier.");
-            day = day + 7;
-        }
-        while (day < 31); {
-            System.out.println(day + " today is friday. need go home erlier.");
+        int lastDay = 31;
+        for (int i = 1; i <= lastDay; i = i + 7) {
+            System.out.println(i + " today is a friday. need go home erlier.");
         }
         System.out.println(" ");
         System.out.println("task 8.");
