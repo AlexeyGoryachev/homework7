@@ -78,12 +78,16 @@ public class Main {
         System.out.println("task 8.");
         int currentYear = 2024;
         int cometCome = 0;
+        int startYear = currentYear - 200;
+        int endYear = currentYear +100;
+        startYear += (79 - (startYear % 79));
+        cometCome = startYear;
         do {
-            System.out.println(cometCome + " comet come.");
+            System.out.println(cometCome + " the comet come.");
             cometCome = cometCome + 79;
         }
-        while (cometCome < currentYear + 100);{
-            System.out.println(cometCome + " comet come.");
+        while (cometCome < endYear); {
+            System.out.println(cometCome + " the comet come.");
         }
     }
 }
