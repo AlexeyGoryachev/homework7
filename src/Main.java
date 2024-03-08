@@ -69,7 +69,7 @@ public class Main {
         System.out.println("task 7.");
         int firstFriday = 1;
         int lastDay = 31;
-        for (int i = 1; i <= lastDay; i = i + 7) {
+        for (int i = firstFriday; i <= lastDay; i = i + 7) {
             System.out.println(i + " today is a friday. need go home erlier.");
         }
         System.out.println(" ");
