@@ -86,6 +86,7 @@ public class Main {
         }
         while (cometCome < endYear); {
             System.out.println(cometCome + " the comet come.");
+
         }
     }
 }
